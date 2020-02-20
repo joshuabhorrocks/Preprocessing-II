@@ -1,1 +1,24 @@
 // Navigation Styles here
+nav {
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px dashed @navigation-border;
+    a {
+        font-size: 15px;
+        text-decoration: none;
+    }
+    @media @mobile {
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around; 
+        h1 {
+            margin: 0% 30% 0% 35%;
+        }
+        a {
+            font-size: 15px;
+            text-decoration: none;
+        }
+    }
+}

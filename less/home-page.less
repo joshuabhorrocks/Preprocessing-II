@@ -40,12 +40,13 @@
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
-
+    margin: 0 auto 30px; 
+    }
     img {
       border-radius: 10px;
     }
   }
+ 
 
   .content-pick {
     padding-top: 30px;
@@ -57,5 +58,31 @@
       width: 30%;
       margin-bottom: 30px;
     }
+    .btn-class {
+      .btn(@shark, @eastern-blue);
   }
 }// home
+
+.header {
+  width: 45%;
+  margin-left: 28%;
+  border-bottom: 2px dashed @navigation-border;
+  display: flex;
+  flex-flow:column wrap;
+  justify-content: center;
+    h2 {
+      margin-top: 2%;
+    }
+    @media @mobile {
+        width: 100%;
+        margin-left: auto;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}
+
+.containter {
+  display: flex;
+  flex-flow: column wrap;
+  
+}
